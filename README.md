@@ -1,6 +1,10 @@
-# Blink
+<p align="center">
+  <img src="public/brand/blink-mark-512.png" width="150" alt="Blink logo" />
+</p>
 
-Wallet-owned short links powered by Stellar and Soroban.
+<h1 align="center">Blink</h1>
+
+<p align="center"><strong>Wallet-owned short links powered by Stellar and Soroban.</strong></p>
 
 Blink turns a short-link alias into a portable on-chain record. The alias owner is a Stellar address rather than an account in a private database, so ownership can be verified publicly and destinations can be updated without replacing the short link.
 

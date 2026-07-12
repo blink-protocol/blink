@@ -1,10 +1,11 @@
 import { CreateLinkForm } from "@/components/create-link-form";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
       <nav>
-        <a className="brand" href="#">BLINK<span>✦</span></a>
+        <a className="brand" href="#"><Image src="/brand/blink-mark-512.png" alt="" width={36} height={36} priority /><span>BLINK</span></a>
         <div className="nav-links"><a href="#use-cases">Use cases</a><a href="#how">How it works</a><a href="#developers">Developers</a></div>
         <div className="network"><i /> Network online</div>
       </nav>
@@ -70,7 +71,7 @@ export default function Home() {
         <div className="cta-star">✦</div><span className="eyebrow">YOUR LINK SHOULD OUTLIVE THE PLATFORM</span><h2>Claim something<br />worth remembering.</h2><a href="#" className="cta-button">Create your on-chain link <span>↗</span></a>
       </section>
 
-      <footer><a className="brand" href="#">BLINK<span>✦</span></a><p>Open-source link infrastructure on Stellar.</p><div><a href="#developers">Contract</a><a href="https://developers.stellar.org" target="_blank" rel="noreferrer">Stellar docs ↗</a></div><span>© 2026 BLINK</span></footer>
+      <footer><a className="brand" href="#"><Image src="/brand/blink-mark-512.png" alt="" width={34} height={34} /><span>BLINK</span></a><p>Open-source link infrastructure on Stellar.</p><div><a href="#developers">Contract</a><a href="https://developers.stellar.org" target="_blank" rel="noreferrer">Stellar docs ↗</a></div><span>© 2026 BLINK</span></footer>
     </main>
   );
 }
