@@ -1,0 +1,16 @@
+[package]
+name = "link-registry"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = "26.0.1"
+
+[dev-dependencies]
+soroban-sdk = { version = "26.0.1", features = ["testutils"] }
+# soroban-env-host currently declares an unbounded >=2 range; pinning prevents
+# Cargo from selecting ed25519-dalek 3 with an incompatible rand_core API.
+ed25519-dalek = "=2.2.0"
